@@ -83,3 +83,8 @@ void ColaMedieval::Eliminar() {
     delete temp;
     tam--;
 }
+//*********************************************
+bool ColaMedieval::EstaVacia() const
+{
+    return tam == 0;
+}
