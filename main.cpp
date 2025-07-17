@@ -83,6 +83,21 @@ int main() {
         sleep(1);
         minutos++;
     }
+    cout << "\n\n\nTermino el tiempo de atencion del rey.\n\n";
+
+    pausee();
+    system("clear");
+
+    cout << "El rey atendio en total a " << colaAtendidos.ObtenerTam() << " personas, cuyos nombres, en orden de atencion, son: \n";
+    colaAtendidos.Imprimir();
+
+    cout << "El rey atendio en a " << colaAtendidos.ObtenerTamNoble() << " nobles \n";
+    cout << "El rey atendio en a " << colaAtendidos.ObtenerTamPlebeyo() << " plebeyo \n";
+
+    cout << "Quedaron " << colaEspera.ObtenerTam() << " personas en espera.\n";
+    colaEspera.Imprimir();
+
+    cout << "La caja termin\202 de atender a " << colaEspera.ObtenerFrente();
 
     return 0;
 }
