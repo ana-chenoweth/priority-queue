@@ -5,6 +5,8 @@
 #include <string>
 #include "priority-queue/ColaMedieval.hpp"
 
+using namespace std;
+
 void pausee() {
     std::cout << "Presiona Enter para continuar...";
     std::cin.get();
@@ -24,6 +26,14 @@ int main() {
     int CiudadanoTiempo = 1;
     int tiempo = 1, minutos = 0;
     bool ocupado = false;
+
+    cout << "**********************************************************\n"
+         << "               REY                                        \n"
+         << "                                                          \n"
+         << "Tiempo del rey del dia de hoy: " << intervaloAtencionTotal << " minutos.\n\n"
+         << "Tiempo de espera del dia de hoy: " << tiempoEspera << " minutos.\n\n"
+         << "**********************************************************" << endl;
+    pausee();
 
     return 0;
 }
