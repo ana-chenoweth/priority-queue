@@ -1,4 +1,4 @@
-# Priority Queue in C++ (Academic Project)
+# Priority Queue in C++
 
 This is an academic project that implements a **priority queue** using object-oriented programming in C++. It models a queue where each element has a priority, and elements are served based on their priority level rather than their order of arrival. Prioritizing Nobles over Plebeians upon insertion.
 
@@ -8,9 +8,9 @@ This is an academic project that implements a **priority queue** using object-or
 <table>
   <tr>
     <td> <h4>Start</h4>
-    <img src="img/start-sign" alt="Start sign" width="400"></td>
+    <img src="img/start-sign.png" alt="Start sign" width="400"></td>
     <td><h4>Concluisions of the process (there are more people but I cut it off)</h4>
-    <img src="img/sconclusions.png" alt="Conclusions" width="400"></td> 
+    <img src="img/conclusions.png" alt="Conclusions" width="400"></td> 
   </tr>
 </table>
 
