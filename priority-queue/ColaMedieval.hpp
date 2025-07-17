@@ -17,6 +17,9 @@ public:
     int ObtenerTam() const;
     int ObtenerTamPlebeyo() const;
     int ObtenerTamNoble() const;
+    std::string ObtenerFondo() const;
+    std::string ObtenerFrente() const;
+    std::string ObtenerClaseSocialFrente() const;
     bool EstaVacia() const;
     void Vaciar();
 

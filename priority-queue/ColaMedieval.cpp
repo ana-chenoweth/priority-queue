@@ -101,6 +101,28 @@ int ColaMedieval::ObtenerTamNoble() const
 {
     return tamNoble;
 }
+//**********************************************
+
+std::string ColaMedieval::ObtenerFondo() const
+{
+    if (EstaVacia()) throw ColaVacia();
+    return fondo->nombre;
+}
+//**********************************************
+
+std::string ColaMedieval::ObtenerFrente() const
+{
+    if (EstaVacia()) throw ColaVacia();
+    return fondo->siguiente->nombre;
+}
+//**********************************************
+
+std::string ColaMedieval::ObtenerClaseSocialFrente() const
+{
+    if (EstaVacia()) throw ColaVacia();
+    return fondo->siguiente->claseSocial;
+}
+
 //*********************************************
 bool ColaMedieval::EstaVacia() const
 {
