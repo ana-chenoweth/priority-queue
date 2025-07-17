@@ -135,3 +135,28 @@ void ColaMedieval::Vaciar()
     while (!EstaVacia())
         Eliminar();
 }
+//*******************************************
+void ColaMedieval::Imprimir() const
+{
+    if (EstaVacia()) return;
+    Individuo *actual = fondo->siguiente;
+    std::cout << actual->claseSocial << " : " << actual->nombre << std::endl;
+    while(actual!=fondo){
+
+        actual = actual->siguiente;
+        std::cout << actual->claseSocial << " : " << actual->nombre << std::endl;
+    }
+}
+//*******************************************
+void ColaMedieval::ImprimirSinFrente() const
+{
+    if (EstaVacia()) return;
+    Individuo *actual = fondo->siguiente;
+    bool omitirPrimerElemento = true;
+
+    while(actual!=fondo){
+        if (omitirPrimerElemento) omitirPrimerElemento = false;
+            else std::cout << actual->claseSocial << " : " << actual->nombre << std::endl;
+        actual = actual->siguiente;
+    }
+}

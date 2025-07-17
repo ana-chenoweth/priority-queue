@@ -22,6 +22,8 @@ public:
     std::string ObtenerClaseSocialFrente() const;
     bool EstaVacia() const;
     void Vaciar();
+    void ImprimirSinFrente() const;
+    void Imprimir() const;
 
 private:
     int tam;
