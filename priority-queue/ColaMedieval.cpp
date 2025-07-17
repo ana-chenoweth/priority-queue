@@ -160,3 +160,7 @@ void ColaMedieval::ImprimirSinFrente() const
         actual = actual->siguiente;
     }
 }
+//*******************************************
+const char* ColaVacia::what() const throw() {
+    return "Cola vacia";
+}
