@@ -108,7 +108,7 @@ int main() {
     cout << "Quedaron " << colaEspera.ObtenerTam() << " personas en espera.\n";
     colaEspera.Imprimir();
 
-    cout << "La caja termin\202 de atender a " << colaEspera.ObtenerFrente();
+    cout << "La caja terminara de atender a " << colaEspera.ObtenerFrente();
 
     return 0;
 }
