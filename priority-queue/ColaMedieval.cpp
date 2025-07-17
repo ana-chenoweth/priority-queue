@@ -61,3 +61,25 @@ void ColaMedieval::Agregar(std::string nombre, std::string claseSocial) {
     }
     tam++;
 }
+//****************************************************************************************
+
+void ColaMedieval::Eliminar() {
+    if (EstaVacia()) throw ColaVacia();
+
+    Individuo* temp = fondo->siguiente;
+    fondo->siguiente = temp->siguiente;
+
+    if (temp == fondoNoble) {
+        fondoNoble = nullptr;
+    }
+    if (temp == fondo) {
+        fondo = nullptr;
+    }
+    if (temp->claseSocial == "Noble") {
+        tamNoble--;
+    } else {
+        tamPlebeyo--;
+    }
+    delete temp;
+    tam--;
+}

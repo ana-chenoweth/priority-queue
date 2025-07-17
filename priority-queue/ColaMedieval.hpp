@@ -13,6 +13,7 @@ public:
     ColaMedieval(const ColaMedieval &c);
     ColaMedieval &operator=(const ColaMedieval &c);
     void Agregar(std::string nombre, std::string claseSocial);
+    void Eliminar();
 
 private:
     int tam;
