@@ -1,3 +1,9 @@
+/**
+ * \file main.hpp
+ * \brief
+ * \author Ana Laura Chenoweth Galaz
+ * \date 20/03/2024
+ */
 #include <iostream>
 #include <ctime>
 #include <cstdlib>
@@ -12,6 +18,11 @@ void pausee() {
     std::cin.get();
 }
 
+/** \brief M&eacute;todo que selecciona un nombre al azar, con nombres y apellido
+ *
+ * \return string Nombre completo
+ *
+ */
 string nombreAleatorio() {
     string nombres[] = {"Maria", "Jose", "Carmen", "Juan", "Ana", "Antonio", "Laura", "Francisco", "Isabel", "David", "Rosa", "Miguel", "Elena", "Manuel", "Patricia", "Luis", "Carolina", "Javier", "Marta", "Pedro", "Natalia", "Diego", "Cristina", "Carlos", "Lucia", "Alejandro", "Paula", "Angela", "Sergio", "Nuria", "Pablo", "Raquel", "Daniel", "Sara", "Fernando", "Beatriz", "Ricardo", "Claudia", "Ruben", "Andrea", "Adrian", "Elena", "Jesus", "Marta", "Alberto", "Lorena", "Jorge", "Georgina", "Denisse", "Omar", "Ivan", "Silvia"};
     string apellidos[] = {"Garcia", "Rodriguez", "Martinez", "Lopez", "Gonzalez", "Sanchez", "Perez", "Gomez", "Fernandez", "Ruiz", "Diaz", "Moreno", "Alvarez", "Romero", "Navarro", "Torres", "Dominguez", "Vazquez", "Ramos", "Jimenez", "Martinez", "Gutierrez", "Herrero", "Rojas", "Morales", "Ortega", "Delgado", "Castro", "Castillo", "Carrasco", "Cordero", "Cabello", "Reyes", "Medina", "Aguilar", "Bravo", "Molina", "Leon", "Marin", "Blanco", "Gallego", "Ramirez", "Suarez", "Ortega", "Nunez", "Salazar", "Iglesias", "Mendez", "Moya", "Estevez", "Salcido", "Valenzuela", "Galaz", "Chenoweth", "Antunez"};
