@@ -10,7 +10,9 @@ class ColaMedieval
 public:
     ColaMedieval();
     ~ColaMedieval();
-
+    ColaMedieval(const ColaMedieval &c);
+    ColaMedieval &operator=(const ColaMedieval &c);
+    
 private:
     int tam;
     int tamNoble;
