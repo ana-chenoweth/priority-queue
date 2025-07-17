@@ -8,8 +8,8 @@
 class ColaMedieval
 {
 public:
-
     ColaMedieval();
+    ~ColaMedieval();
 
 private:
     int tam;

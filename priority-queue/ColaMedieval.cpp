@@ -5,3 +5,9 @@
 ColaMedieval::ColaMedieval() : tam(0), tamNoble(0), tamPlebeyo(0), fondo(nullptr), fondoNoble(nullptr)
 {
 }
+//**********************************************
+
+ColaMedieval::~ColaMedieval()
+{
+    Vaciar();
+}
