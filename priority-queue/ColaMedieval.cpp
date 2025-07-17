@@ -83,6 +83,24 @@ void ColaMedieval::Eliminar() {
     delete temp;
     tam--;
 }
+//**********************************************
+
+int ColaMedieval::ObtenerTam() const
+{
+    return tam;
+}
+//**********************************************
+
+int ColaMedieval::ObtenerTamPlebeyo() const
+{
+    return tamPlebeyo;
+}
+//**********************************************
+
+int ColaMedieval::ObtenerTamNoble() const
+{
+    return tamNoble;
+}
 //*********************************************
 bool ColaMedieval::EstaVacia() const
 {
