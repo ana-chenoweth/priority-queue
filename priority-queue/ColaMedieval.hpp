@@ -12,7 +12,8 @@ public:
     ~ColaMedieval();
     ColaMedieval(const ColaMedieval &c);
     ColaMedieval &operator=(const ColaMedieval &c);
-    
+    void Agregar(std::string nombre, std::string claseSocial);
+
 private:
     int tam;
     int tamNoble;

@@ -28,3 +28,36 @@ ColaMedieval& ColaMedieval::operator=(const ColaMedieval& c) {
     }
     return *this;
 }
+//*********************************************************************************************************
+void ColaMedieval::Agregar(std::string nombre, std::string claseSocial) {
+    Individuo* nuevo = new Individuo(nombre, claseSocial, nullptr);
+    if (EstaVacia()) {
+        fondo = nuevo;
+        fondo->siguiente = fondo;
+        if (claseSocial == "Noble") {
+            fondoNoble = fondo;
+            tamNoble++;
+        } else {
+            tamPlebeyo++;
+        }
+    } else {
+        if (claseSocial == "Noble") {
+            if (fondoNoble == nullptr) {
+                nuevo->siguiente = fondo->siguiente;
+                fondo->siguiente = nuevo;
+                fondoNoble = nuevo;
+            } else {
+                nuevo->siguiente = fondoNoble->siguiente;
+                fondoNoble->siguiente = nuevo;
+                fondoNoble = nuevo;
+            }
+            tamNoble++;
+        } else {
+            nuevo->siguiente = fondo->siguiente;
+            fondo->siguiente = nuevo;
+            fondo = nuevo;
+            tamPlebeyo++;
+        }
+    }
+    tam++;
+}
