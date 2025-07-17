@@ -15,6 +15,7 @@ public:
     void Agregar(std::string nombre, std::string claseSocial);
     void Eliminar();
     bool EstaVacia() const;
+    void Vaciar();
 
 private:
     int tam;

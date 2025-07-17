@@ -88,3 +88,10 @@ bool ColaMedieval::EstaVacia() const
 {
     return tam == 0;
 }
+//********************************************
+
+void ColaMedieval::Vaciar()
+{
+    while (!EstaVacia())
+        Eliminar();
+}
